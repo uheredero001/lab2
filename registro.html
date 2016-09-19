@@ -1,0 +1,52 @@
+<html>
+  <head>
+	<title>Registro</title>
+		<script>
+		function vervalores(){
+		var sAux="";
+		var frm = document.getElementById("registro");
+		for (i=0;i<frm.elements.length;i++)
+		{ 
+		sAux += "NOMBRE: " + frm.elements[i].name + " "; 
+		sAux += "VALOR: " + frm.elements[i].value + "\n" ;
+		} 
+		alert(sAux); 
+		}
+		</script>
+		 <link rel='stylesheet' type='text/css' href='style.css' />
+ </head>
+ 
+ <body>
+  <div id='page-wrap'>
+  <header class='main' id='h1'>
+		<h2>Formulario de registro</h2>
+	<form id='registro' name='registro' onSubmit='vervalores()'>
+        <legend>Rellene los campos:</legend>
+             <label>Nombre</label>
+                <input id="registro" name="nombre" type="text"  />
+            <br/>
+           	 <label>Apellidos</label>
+           	 	<input id="registro" name="apellidos" type="text"  />
+           	 <br/>
+           	 <label>Email</label>
+                <input id="registro" name="email" type="text"  />
+            <br/>
+             <label>Password</label>
+                <input id="registro" name="password" type="text"  />
+            <br/>
+             <label>Telefono</label>
+                <input id="registro" name="telefono" type="text"  />
+            <br/>
+             <label>Especialidad</label>
+                <input id="registro" name="especialidad" type="text" />
+           <br/>
+           <button id="resgistro" type="submit" value="submit"> Enviar </button>
+           <br/>
+         
+	</form>
+
+		<span><a href='layout.html'>Inicio</a></spam>
+    </header>
+  </div>
+  </body>
+</html>
